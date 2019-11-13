@@ -5,6 +5,6 @@ app.get("/", function(req, res) {
   res.send("Hello World");
 });
 
-const server = app.listen(3000, () =>
+const server = app.listen(process.env.PORT || 3000, () =>
   process.stdout.write(`Server listening on port ${server.address().port}.\n`)
 );
