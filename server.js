@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const { connectToCouch, insertEntry } = require('./lib/couch')
 const { validateEvent } = require('./lib/event')
 
@@ -20,7 +21,10 @@ ${JSON.stringify(requiredArgs, null, 2)}`)
   const app = express()
   app.use(express.json())
 
-  app.post('/event', async (req, res) => {
+  app.use(cors())
+  app.options('*', cors())
+
+  app.post('/event', cors(), async (req, res) => {
     const event = req.body
     if (!validateEvent(event)) {
       res.status(400).send('bad request')
