@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "author": "Jan Kaßel <jan@kassel.works",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "private": true,
   "scripts": {
+    "build": "node build.js -d | exorcist dist/telemetry.js.map > dist/telemetry.js",
+    "build-min": "node build.js | terser -m -c > dist/telemetry.min.js",
     "start": "node server.js",
     "test": "standard"
   },
@@ -31,6 +33,7 @@
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "dotenv": "^8.2.0",
+    "exorcist": "^1.0.1",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "standard": "^14.3.1"
