@@ -1,8 +1,10 @@
 {
-  "name": "recogito-study-telemetry",
+  "name": "recogito-p2p-telemetry",
   "version": "0.1.0",
+  "author": "Jan Kaßel <jan@kassel.works",
   "description": "",
   "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node server.js",
     "test": "standard"
@@ -12,7 +14,6 @@
     "url": "git+https://github.com/falafeljan/recogito-study-telemetry.git"
   },
   "keywords": [],
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/falafeljan/recogito-study-telemetry/issues"
@@ -20,9 +21,18 @@
   "homepage": "https://github.com/falafeljan/recogito-study-telemetry#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nano": "^8.1.0"
+    "nano": "^8.1.0",
+    "node-fetch": "^2.6.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
     "standard": "^14.3.1"
   }
 }
