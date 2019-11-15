@@ -32,11 +32,11 @@ async function sendInit () {
   })
 }
 
-async function sendCreate (newAnnotation) {
+async function sendCreate (annotation) {
   return sendEvent({
     type: 'create',
     userId,
-    newAnnotation
+    annotation
   })
 }
 
@@ -48,21 +48,11 @@ async function sendOpen (annotation) {
   })
 }
 
-async function sendWrite (annotation, newAnnotation) {
-  return sendEvent({
-    type: 'write',
-    userId,
-    annotation,
-    newAnnotation
-  })
-}
-
-async function sendEdit (annotation, updatedAnnotation) {
+async function sendEdit (annotation) {
   return sendEvent({
     type: 'edit',
     userId,
-    annotation,
-    updatedAnnotation
+    annotation
   })
 }
 
@@ -90,7 +80,6 @@ module.exports = {
   sendInit,
   sendCreate,
   sendOpen,
-  sendWrite,
   sendEdit,
   sendClose,
   sendDelete
