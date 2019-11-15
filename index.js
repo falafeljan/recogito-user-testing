@@ -50,7 +50,7 @@ async function sendOpen (annotation) {
 
 async function sendWrite (annotation, newAnnotation) {
   return sendEvent({
-    type: 'open',
+    type: 'write',
     userId,
     annotation,
     newAnnotation
@@ -59,7 +59,7 @@ async function sendWrite (annotation, newAnnotation) {
 
 async function sendEdit (annotation, updatedAnnotation) {
   return sendEvent({
-    type: 'open',
+    type: 'edit',
     userId,
     annotation,
     updatedAnnotation
@@ -68,7 +68,7 @@ async function sendEdit (annotation, updatedAnnotation) {
 
 async function sendClose (annotation) {
   return sendEvent({
-    type: 'open',
+    type: 'close',
     userId,
     annotation
   })
