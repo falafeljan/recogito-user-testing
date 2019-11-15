@@ -8,6 +8,10 @@ async function initTelemetry (_endpoint) {
   endpoint = _endpoint
 }
 
+function getUserId () {
+  return userId
+}
+
 function setUserId (_userId) {
   userId = _userId
   window.localStorage.setItem(key, userId)
@@ -70,9 +74,17 @@ async function sendClose (annotation) {
   })
 }
 
+async function sendDelete (annotation) {
+  return sendEvent({
+    type: 'delete',
+    userId,
+    annotation
+  })
+}
+
 module.exports = {
-  userId,
   initTelemetry,
+  getUserId,
   setUserId,
 
   sendInit,
@@ -80,5 +92,6 @@ module.exports = {
   sendOpen,
   sendWrite,
   sendEdit,
-  sendClose
+  sendClose,
+  sendDelete
 }
