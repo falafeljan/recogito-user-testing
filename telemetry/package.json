@@ -1,6 +1,6 @@
 {
   "name": "recogito-user-testing-telemetry",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Jan Kaßel <jan@kassel.works",
   "description": "Server and browser library for recording interaction events during user testing sessions with Recogito",
   "main": "index.js",
