@@ -1,8 +1,8 @@
 {
-  "name": "recogito-p2p-telemetry",
+  "name": "recogito-user-testing-telemetry",
   "version": "0.1.0",
   "author": "Jan Kaßel <jan@kassel.works",
-  "description": "",
+  "description": "Server and browser library for recording interaction events during user testing sessions with Recogito",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falafeljan/recogito-study-telemetry.git"
+    "url": "git+https://github.com/falafeljan/recogito-user-testing.git"
   },
   "keywords": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/falafeljan/recogito-study-telemetry/issues"
+    "url": "https://github.com/falafeljan/recogito-user-testing/issues"
   },
-  "homepage": "https://github.com/falafeljan/recogito-study-telemetry#readme",
+  "homepage": "https://github.com/falafeljan/recogito-user-testing#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
