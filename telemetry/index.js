@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 let userId, endpoint
 const key = 'recogito-p2p-telemetry-user-id'
 
-async function initTelemetry (_endpoint) {
+function initTelemetry (_endpoint) {
   userId = window.localStorage.getItem(key)
   endpoint = _endpoint
 }
