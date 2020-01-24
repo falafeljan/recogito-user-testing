@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/falafeljan/recogito-user-testing.git"
   },
+  "engines": {
+    "node": ">=12.8"
+  },
   "keywords": [],
   "license": "MIT",
   "bugs": {
@@ -26,11 +29,11 @@
     "express": "^4.17.1",
     "nano": "^8.1.0",
     "node-fetch": "^2.6.0",
-    "uuid": "^3.3.3"
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "dotenv": "^8.2.0",
