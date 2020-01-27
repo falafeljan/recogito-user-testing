@@ -1,5 +1,8 @@
 # Recogito User Testing
 
+
+[![DOI](https://zenodo.org/badge/221554792.svg)](https://zenodo.org/badge/latestdoi/221554792)
+
 This repository provides tools intended for performing user testing on Pelagios' [Recogito](https://github.com/pelagios/recogito2), a platform for semantic annotation. These testing sessions aim to gather knowledge around how people actually work with Recogito, recording their actions while they interact with annotations on resources.
 
 To record user interaction events, the telemetry module provides a microservice for receiving events via HTTP requests and storing them in a [CouchDB database](https://couchdb.apache.org/), as well as a client library that can be embedded into a JavaScript application running in the users' browsers.
